@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <Navbar className="nav" variant="dark">
-        <Container>
+        <Container className="nav-container">
           <Navbar.Brand>
             <Link className="nav-link" to="/">
               <img

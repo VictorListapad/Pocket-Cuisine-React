@@ -1,13 +1,15 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Preloader } from "./components/Preloader";
+import { Home } from "./pages/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <>
       <Router>
         <Header />
-        <Preloader />
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
         <Footer />
       </Router>
     </>
