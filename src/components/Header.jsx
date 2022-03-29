@@ -15,7 +15,7 @@ function Header() {
                 height="40"
                 className="d-inline-block align-top"
               />
-              <span className="nav-text">Pocket Cusine</span>
+              <span className="nav-text">Pocket Cuisine</span>
             </Link>
           </Navbar.Brand>
         </Container>

@@ -8,7 +8,7 @@ const getAllCategories = async () => {
 
 // GET ALL MEALS FROM CATEGORY
 const getMealsByCategory = async (categoryName) => {
-  const res = await fetch(`${API_URL}filter.php?i=${categoryName}`);
+  const res = await fetch(`${API_URL}filter.php?c=${categoryName}`);
   return await res.json();
 };
 // GET MEAL RECIPE

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function CategoryCard(props) {
   const {
     strCategory: catName,
@@ -9,9 +10,12 @@ function CategoryCard(props) {
       <div className="cat-img-container">
         <img src={catImg} alt={catName} />
       </div>
+      <h3>{catName}</h3>
       <div className="cat-description">
-        <p>{description.slice(0, 70)}...</p>
-        <button className="cat-btn">Check Recipes</button>
+        <p>{description.slice(0, 50)}...</p>
+        <Link to={`/meals/${catName}`}>
+          <button className="cat-btn">Check Recipes</button>
+        </Link>
       </div>
     </div>
   );
