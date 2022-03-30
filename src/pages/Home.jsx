@@ -6,13 +6,12 @@ import { Search } from "../components/Search";
 function Home() {
   const [categoryList, setCategoryList] = useState([]);
   const handleSearch = (str) => {
-    let filtered;
     if (!str) {
       getAllCategories().then((data) => {
         setCategoryList(data.categories);
       });
     } else {
-      filtered = categoryList.filter((item) =>
+      const filtered = categoryList.filter((item) =>
         item.strCategory.toLowerCase().includes(str.toLowerCase())
       );
       setCategoryList(filtered);
