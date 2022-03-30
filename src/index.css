@@ -241,3 +241,28 @@ iframe {
   width: 600px;
   height: 350px;
 }
+
+/* SEARCH BAR */
+.search-bar {
+  height: 4rem;
+}
+.search-bar input {
+  width: 40%;
+  margin-right: 0.75rem;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar button {
+  border: none;
+  background: #f9d423;
+  padding: 0.15rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.search-bar button:hover {
+  background: #ff4e50;
+  color: #fff;
+}
