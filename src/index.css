@@ -122,7 +122,6 @@ footer span {
 }
 .cat-description p {
   max-height: 5rem;
-  /* overflow: hidden; */
 }
 
 .category-card:hover {
@@ -193,8 +192,52 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .meal-description p {
-  max-height: 0.5rem;
+  max-height: 2rem;
+}
+
+/* RECIPE PAGE */
+.recipeNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 4rem - 70px);
+}
+
+.recipe {
+  min-height: calc(100vh - 4rem - 70px);
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-img-container {
+  display: flex;
+  justify-content: center;
+}
+.recipe-img-container img {
+  max-width: 60%;
+}
+
+table td {
+  border: 1px solid black;
+}
+table th {
+  border: 1px solid black;
+}
+
+.recipe h4 {
+  align-self: flex-start;
+  margin: 0.5rem 0;
+}
+.recipe h2 {
+  margin: 1rem 0;
+}
+
+iframe {
+  max-width: 100%;
+  width: 600px;
+  height: 350px;
 }

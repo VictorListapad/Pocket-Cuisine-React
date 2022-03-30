@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 function MealCard(props) {
-  const { strMeal, strMealThumb } = props;
+  const { strMeal, strMealThumb, idMeal } = props;
   return (
     <div className="meal-card category-card">
       <div className="cat-img-container">
@@ -8,7 +8,7 @@ function MealCard(props) {
       </div>
       <div className="meal-description">
         <p>{strMeal.slice(0, 40)}</p>
-        <Link>
+        <Link to={`/meal/${idMeal}`}>
           <button className="cat-btn">Check Recipes</button>
         </Link>
       </div>
