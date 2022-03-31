@@ -9,9 +9,16 @@ function Footer() {
         </span>
         <div className="src-icons">
           <span>Source code</span>
-          <img className="footer-icons" src={SrcImg} alt="source page" />
+          <a
+            href="https://github.com/VictorListapad/Pocket-Cuisine-React"
+            target="_blank"
+          >
+            <img className="footer-icons" src={SrcImg} alt="source page" />
+          </a>
           <span>Github page</span>
-          <img className="footer-icons" src={GitImg} alt="github page" />
+          <a href="https://github.com/VictorListapad" target="_blank">
+            <img className="footer-icons" src={GitImg} alt="github page" />
+          </a>
         </div>
       </footer>
     </>

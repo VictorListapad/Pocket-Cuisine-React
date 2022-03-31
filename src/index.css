@@ -249,6 +249,8 @@ iframe {
 .search-bar input {
   width: 40%;
   margin-right: 0.75rem;
+  border: 1px solid rgb(94, 92, 92);
+  padding: 0.1rem 1rem;
 }
 .search-bar {
   display: flex;
@@ -265,4 +267,19 @@ iframe {
 .search-bar button:hover {
   background: #ff4e50;
   color: #fff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.back-btn {
+  border: none;
+  background: #f9d423;
+  padding: 0.1rem 0.5rem;
+  transition: all 0.3s linear;
+}
+.back-btn:hover {
+  color: #fff;
+  background: #ff4e50;
 }
